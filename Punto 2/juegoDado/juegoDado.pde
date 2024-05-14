@@ -21,7 +21,7 @@ public void setup(){
 }
 
 public void draw(){
-  background(0);
+  background(0,250,250);
   tablero.display();
   hud.display();
   image(imagenes[dado.getIndiceImagen()], width/2, height/2,200,200);
@@ -30,7 +30,7 @@ public void draw(){
 }
 
 void keyReleased() {
-    if (key == ' ') {
+    if (key == 'q') {
       dado.display();
       hud.display();
       int indiceImg = dado.getIndiceImagen();
